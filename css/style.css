@@ -1,0 +1,536 @@
+a/* font-family: 'Source Sans Pro', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url(../images/banner.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-item {
+  padding-left: 16px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 15pt;
+  padding: 0;
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0%;
+  left: 0px;
+  bottom: -5px;
+  background-color: #008ed6;
+  transition: 0.4s all ease-in-out;
+}
+.navbar-brand {
+  position: relative;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  left: -2%;
+}
+.navbar-light .navbar-nav .nav-link::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0%;
+  right: 0px;
+  bottom: -5px;
+  background-color: #008ed6;
+  transition: 0.4s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::before {
+  width: 45%;
+}
+.navbar-light .navbar-nav .nav-link:hover::after {
+  width: 45%;
+}
+.banner {
+  min-height: 90vh;
+  align-items: center;
+}
+.banner-content {
+}
+.iphone_one {
+  position: absolute;
+  bottom: 0;
+  left: 55%;
+}
+.iphone_one img {
+}
+.banner-content h1 {
+  color: #fff;
+  font-size: 45pt;
+  margin-bottom: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+.banner-content h5 {
+  color: #008ed6;
+  text-transform: uppercase;
+  font-size: 14pt;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+.banner-content p {
+  color: #999999;
+  font-size: 17pt;
+  margin-bottom: 35px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.btn-download {
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #999999;
+  padding: 11px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+.btn-feature {
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #999999;
+  padding: 11px;
+  margin-left: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+.btn-download:hover {
+  background-color: #008ed6;
+  border: 1px solid #008ed6;
+  color: #fff;
+  box-shadow: 0px 0px 10px 0px #008ed6;
+}
+.btn-feature:hover {
+  background-color: #008ed6;
+  border: 1px solid #008ed6;
+  color: #fff;
+  box-shadow: 0px 0px 10px 0px #008ed6;
+}
+.heading-part {
+  text-align: center;
+}
+.heading-part h5 {
+  color: #008ed6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.heading-part h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+.heading-part span {
+  display: inline-block;
+  height: 3px;
+  width: 65px;
+  position: relative;
+}
+.heading-part span::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0%;
+  left: 0;
+  top: 0;
+  background-color: #008ed6;
+  transition: 0.4s all ease-in-out;
+}
+.heading-part span::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0%;
+  right: 0;
+  top: 0;
+  background-color: #008ed6;
+  transition: 0.4s all ease-in-out;
+}
+.pricing:hover .heading-part span::after,
+.pricing:hover .heading-part span::before {
+  width: 47%;
+}
+.features-section:hover .heading-part span::after,
+.features-section:hover .heading-part span::before {
+  width: 47%;
+}
+.testimonial-section:hover .heading-part span::after,
+.testimonial-section:hover .heading-part span::before {
+  width: 47%;
+}
+.feature-content {
+  align-items: center;
+  border-radius: 10%;
+  padding: 43px;
+  transition: 0.2s all ease-in-out;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.feature-content h1 {
+  font-size: 36px;
+}
+.feature-content p {
+  color: #999999;
+  margin-top: 15px;
+}
+.icon {
+  height: 80px;
+  width: 80px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: auto;
+  color: #008ed6;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.feature-content:hover {
+  box-shadow: 0px 0px 13px 5px #dbdbdb;
+}
+.left {
+}
+.left img {
+}
+.right {
+}
+.right h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+.right h5 {
+  color: #008ed6;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.right span {
+  display: inline-block;
+  height: 3px;
+  width: 65px;
+  position: relative;
+}
+.right span::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0%;
+  left: 0;
+  top: 0;
+  background-color: #008ed6;
+  transition: 0.4s all ease-in-out;
+}
+.right span::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0%;
+  right: 0;
+  top: 0;
+  background-color: #008ed6;
+  transition: 0.4s all ease-in-out;
+}
+.supereasy:hover .right span::after,
+.supereasy:hover .right span::before {
+  width: 47%;
+}
+.details-part:hover .right span::after,
+.details-part:hover .right span::before {
+  width: 47%;
+}
+.right p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #999999;
+  font-size: 18px;
+}
+.right ul {
+  font-family: "Source Sans Pro", sans-serif;
+  list-style: none;
+  font-size: 18px;
+  padding-left: 0rem;
+}
+.right ul li {
+  padding: 10px 0;
+}
+.right ul li i {
+  color: #008ed6;
+  padding-right: 30px;
+}
+.details_one {
+  min-height: 90vh;
+  align-items: center;
+}
+.supereasy {
+  background-color: #f2f2f2;
+}
+.easy {
+  min-height: 80vh;
+  align-items: center;
+}
+.testimonial-section {
+  background-image: url(../images/testimonial_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 95vh;
+  height: 39px 0;
+}
+.testimonial {
+}
+.testimonial p {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  font-size: 24px;
+}
+.clint {
+  margin-top: 50px;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.clint_img {
+  width: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.clint_desc {
+}
+.clint_desc p {
+  font-style: normal;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 4px;
+}
+.clint_desc h6 {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+.owl-nav {
+  display: none;
+}
+.owl-dots {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.owl-dot {
+}
+.owl-dot span {
+  height: 8px;
+  width: 8px;
+  display: inline-block;
+  border: 1px solid #c9c9c9;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.owl-dots .active span {
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.you_see {
+  background-color: black;
+}
+.you_see h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.you_see h1 span {
+  font-weight: 100;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.wys {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 45px 0;
+}
+.price {
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 2%;
+  padding: 0;
+  transition: 0.2s all ease-in-out;
+}
+.price h1 {
+  margin: 0;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0;
+  transition: 0.2s all ease-in-out;
+}
+.price p {
+  padding: 30px;
+  color: #999999;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.amount {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 25px;
+  transition: 0.2s all ease-in-out;
+}
+.amount h1 {
+  font-size: 60px;
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  transition: 0.2s all ease-in-out;
+}
+.amount h1 sup {
+  font-size: 30px;
+  font-weight: 400;
+}
+.amount span {
+  margin: 0;
+  padding: 0;
+  color: #999999;
+  font-family: "Source Sans Pro", sans-serif;
+  transition: 0.2s all ease-in-out;
+}
+.btn-order {
+  color: #008ed6;
+  border: 1px solid #e0e0e0;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 25px;
+  transition: 0.2s all ease-in-out;
+}
+.price:hover .btn-order {
+  background-color: #008ed6;
+  color: #fff;
+}
+.price:hover h1 {
+  color: #008ed6;
+}
+.price:hover .amount {
+  background-color: #008ed6;
+  color: #fff;
+}
+.price:hover .amount h1 {
+  color: #fff;
+}
+.price:hover .amount span {
+  color: #fff;
+}
+.price:hover {
+  box-shadow: 0px 0px 13px 5px #dbdbdb;
+}
+.contact_us:hover .heading-part span::after,
+.contact_us:hover .heading-part span::before {
+  width: 47%;
+}
+.contact_us {
+  background-color: #ededed;
+  min-height: 90vh;
+  position: relative;
+}
+.contact {
+  color: #999999;
+  text-align: center;
+}
+.contact p {
+  font-size: 18px;
+}
+.contact i {
+  font-size: 25px;
+  color: #008ed6;
+  margin-bottom: 16px;
+}
+.contact_us form {
+  background-color: black;
+  width: 50%;
+  padding: 50px;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, 0px);
+}
+.contact_us form input {
+  background-color: transparent;
+  text-transform: uppercase;
+  caret-color: #fff;
+}
+.contact_us form textarea {
+  background-color: transparent;
+  text-transform: uppercase;
+  caret-color: #fff;
+}
+.contact_us form input[type="submit"] {
+  color: #fff;
+  background-color: #008ed6;
+  border: none;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.contact_us form input:focus {
+  background-color: transparent;
+  box-shadow: none;
+  caret-color: #fff;
+}
+.contact_us form textarea:focus {
+  background-color: transparent;
+  box-shadow: none;
+  caret-color: #fff;
+}
+.gp {
+  text-align: right;
+}
+footer {
+  background-color: #15141a;
+  text-align: center;
+  padding: 40px;
+  margin-top: -6px;
+}
+footer i {
+  color: #444348;
+  font-size: 25px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+footer p {
+  color: #444348;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
